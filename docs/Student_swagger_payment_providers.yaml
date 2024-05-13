@@ -1,0 +1,167 @@
+openapi: 3.0.0
+info:
+  title: Student API
+  description: Documentation for the Student API
+  version: 1.0.0
+servers:
+  - url: https://sisclientweb-700031.campusnexus.cloud
+paths:
+  /ds/campusnexus/PaymentProcessorAccounts:
+    get:
+      summary: Retrieve Payment Processor Accounts
+      description: Retrieves a list of payment processor accounts.
+      parameters:
+        - name: username
+          in: query
+          description: The username for authentication.
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for authentication.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of payment processor accounts.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaymentProcessorAccount'
+
+  /ds/campusnexus/PaymentProcessorAchAccounts:
+    get:
+      summary: Retrieve ACH Payment Processor Accounts
+      description: Retrieves a list of ACH payment processor accounts.
+      parameters:
+        - name: username
+          in: query
+          description: The username for authentication.
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for authentication.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of ACH payment processor accounts.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaymentProcessorAchAccount'
+
+  /ds/campusnexus/PaymentProcessorAchDetailDataChanges:
+    get:
+      summary: Retrieve ACH Detail Data Changes
+      description: Retrieves a list of ACH detail data changes for payment processors.
+      parameters:
+        - name: username
+          in: query
+          description: The username for authentication.
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for authentication.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of ACH detail data changes for payment processors.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaymentProcessorAchDetailDataChange'
+
+  /ds/campusnexus/PaymentProcessors:
+    get:
+      summary: Retrieve Payment Processors
+      description: Retrieves a list of payment processors.
+      parameters:
+        - name: username
+          in: query
+          description: The username for authentication.
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for authentication.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of payment processors.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaymentProcessor'
+
+  /ds/campusnexus/PaymentProcessors/{id}:
+    get:
+      summary: Retrieve a Specific Payment Processor
+      description: Retrieves details of a specific payment processor by ID.
+      parameters:
+        - name: id
+          in: path
+          description: The ID of the payment processor to retrieve.
+          required: true
+          schema:
+            type: integer
+        - name: username
+          in: query
+          description: The username for authentication.
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for authentication.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Details of the specified payment processor.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentProcessor'
+components:
+  schemas:
+    PaymentProcessorAccount:
+      type: object
+      properties:
+        // Define properties of the payment processor account here
+
+    PaymentProcessorAchAccount:
+      type: object
+      properties:
+        // Define properties of the ACH payment processor account here
+
+    PaymentProcessorAchDetailDataChange:
+      type: object
+      properties:
+        // Define properties of the ACH detail data change here
+
+    PaymentProcessor:
+      type: object
+      properties:
+        // Define properties of the payment processor here

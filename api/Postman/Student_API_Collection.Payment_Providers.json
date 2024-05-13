@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "ed591940-f6c7-442d-8652-5d9d50e5c058",
+		"name": "Student_API_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28596367",
+		"_collection_link": "https://solar-comet-556261.postman.co/workspace/BBAssist~43a2321a-b420-4cdc-8c76-3c2119ea2263/collection/28596367-ed591940-f6c7-442d-8652-5d9d50e5c058?action=share&source=collection_link&creator=28596367"
+	},
+	"item": [
+		{
+			"name": "Payment Processor",
+			"item": [
+				{
+					"name": "PaymentProcessorAccounts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "GK$AI2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gkumar@700031cm.onmicrosoft.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PaymentProcessorAccounts",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PaymentProcessorAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PaymentProcessorAchAccounts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "GK$AI2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gkumar@700031cm.onmicrosoft.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PaymentProcessorAchAccounts",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PaymentProcessorAchAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PaymentProcessorAchDetailDataChanges",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "GK$AI2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gkumar@700031cm.onmicrosoft.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PaymentProcessorAchDetailDataChanges",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PaymentProcessorAchDetailDataChanges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PaymentProcessors_list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "GK$AI2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gkumar@700031cm.onmicrosoft.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PaymentProcessors",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PaymentProcessors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_particular_PaymentProcessor",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "GK$AI2024",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "gkumar@700031cm.onmicrosoft.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PaymentProcessors(1)",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PaymentProcessors(1)"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
